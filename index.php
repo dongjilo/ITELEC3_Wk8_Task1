@@ -28,20 +28,20 @@ $message2 = new Message("SENDER2", "RECEIVER2", "Hello, I am Sender 2. I hope we
         }
 
         .msg-container.right{
-            justify-content: flex-end
+            justify-content: flex-end;
         }
 
         .msg-container.left{
-            justify-content: flex-start
+            justify-content: flex-start;
         }
 
         .msg-container.right > .msg{
-            background-color:#CCC;
+            background-color:#218aff;
+            color: white;
         }
 
         .msg-container.left > .msg{
-            background-color:#555;
-            color: white;
+            background-color:#d8d8d8;
         }
 
         .msg{
@@ -97,7 +97,7 @@ $message2 = new Message("SENDER2", "RECEIVER2", "Hello, I am Sender 2. I hope we
                 <div class="text-center"><i class='bi bi-person-circle h1'></i></div>
                 <p class="h4 text-center"><?php $message2->getReceiver();?></p>
                 <hr>
-                <p class="small text-center text-secondary"><?php $message2->getDatetime(); ?></p>
+                <p class="small text-center text-secondary"><?php $message2->getDatetime();?></p>
                 <div class="msg-container right">
                     <p class="msg"><?php $message2->sendMessage();?></p>
                 </div>
@@ -105,5 +105,6 @@ $message2 = new Message("SENDER2", "RECEIVER2", "Hello, I am Sender 2. I hope we
         </div>
     </div>
 </div>
+
 </body>
 </html>

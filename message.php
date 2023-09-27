@@ -19,15 +19,13 @@ class Message{
         $this->sender = $sender;
         $this->receiver = $receiver;
         $this->message = $message;
-        $this->datetime = date('Y-m-d h:i A');
+        $this->datetime = date('d/m/Y h:i A');
     }
 
     public function getDatetime()
     {
         echo $this->datetime;
     }
-
-
 
     public function getSender()
     {
@@ -39,13 +37,12 @@ class Message{
         echo $this->receiver;
     }
 
-
     public function sendMessage(){
-        echo "Message sent from {$this->sender} to {$this->receiver} at {$this->datetime}: <br>{$this->message}<br>";
+        echo "MSG ID: {$this->id} <br> Message sent from {$this->sender} to {$this->receiver} at {$this->datetime}: <br>{$this->message}<br>";
     }
 
     public function retrieveMessage(){
-        echo "Message retrieved by {$this->receiver} from  {$this->sender}  at {$this->datetime}: <br>{$this->message}<br>";
+        echo "MSG ID: {$this->id} <br> Message retrieved by {$this->receiver} from {$this->sender} at {$this->datetime}: <br>{$this->message}<br>";
     }
 
 }
