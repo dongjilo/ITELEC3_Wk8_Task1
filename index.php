@@ -1,8 +1,8 @@
 <?php
 include 'message.php';
 
-$message1 = new Message("SENDER1", "RECEIVER1", "Hi, I am Sender 1! Nice to meet you.");
-$message2 = new Message("SENDER2", "RECEIVER2", "Hello, I am Sender 2. I hope we get along!");
+$message1 = new Message("Cliff-sama", "Jovit Jay", "Hi, Jovit Jay! Nice to meet you.");
+$message2 = new Message("Dongkie", "KawaiiDesu4U", "Hello, I am Dongkie. I hope we get along!");
 
 ?>
 
