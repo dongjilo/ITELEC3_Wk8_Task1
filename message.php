@@ -19,7 +19,7 @@ class Message{
         $this->sender = $sender;
         $this->receiver = $receiver;
         $this->message = $message;
-        $this->datetime = date('d/m/Y h:i A');
+        $this->datetime = date('d/m/Y, h:i A');
     }
 
     public function getDatetime()
