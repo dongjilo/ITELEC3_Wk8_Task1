@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('Asia/Manila');
 class Message{
     private $id;
     private $sender;
